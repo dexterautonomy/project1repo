@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    </head>
+    <body style="background-color: cyan;">
+        <div>Welcome to my App</div><br/>
+        
+        <a th:href="@{/user/test}">User Login</a><br/><br/>
+        
+        <a th:href="@{/admin/test}">Admin Login</a><br/><br/>
+        
+        <a th:href="@{/getpassword}">Get Password</a><br/><br/>
+        
+        <p th:text="${pswd}">Testing</p>
+    </body>
+</html>
